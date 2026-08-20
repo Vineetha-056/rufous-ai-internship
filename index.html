@@ -3,29 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Form</title>
+    <meta name="description" content="Simple user registration form">
+    <title>Simple User Form</title>
+
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <header class="page-header">
+        <h1>Simple User Form</h1>
+        <p>Please enter your details below.</p>
+    </header>
 
     <main class="container">
-        <h1>Simple User Form</h1>
+        <section class="form-section" aria-labelledby="form-title">
+            <h2 id="form-title">User Details</h2>
 
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+            <form id="user-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+                </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
 
-            <button type="submit">Submit</button>
-        </form>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
 
-        <ul>
-            <li>HTML5 Structure</li>
-            <li>Basic CSS Styling</li>
-        </ul>
+        <section class="features" aria-labelledby="features-title">
+            <h2 id="features-title">Implemented Features</h2>
+
+            <ul>
+                <li>Semantic HTML5 structure</li>
+                <li>Accessible form labels</li>
+                <li>Basic CSS styling</li>
+                <li>Responsive layout</li>
+            </ul>
+        </section>
     </main>
 
+    <footer class="page-footer">
+        <p>&copy; 2026 Simple User Form</p>
+    </footer>
 </body>
 </html>
